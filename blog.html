@@ -11,22 +11,23 @@
     
 <body>
     <section class="sub-header">
-            <nav>
-                <a href="index.html"><img 
-                    src="eduford_img/logo.png" 
-                    alt="logo"></a>
-                    <div class="nav-links" id="navLinks">
-                        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
-                        <ul>
-                            <li><a href="index.html">HOME</a></li>
-                            <li><a href="about.html">ABOUT</a></li>
-                            <li><a href="course.html">COURSE</a></li>
-                            <li><a href="blog.html">BLOG</a></li>
-                            <li><a href="contact.html">CONTACT</a></li>
-                        </ul> 
-                        
-                    </div>
-                    <i class="fa-solid fa-bars"></i>
+        <nav>
+            <a href="index.html"><img 
+                src="eduford_img/logo.png" 
+                alt="logo"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark"onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul> 
+                    
+                </div>
+                <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
             </nav>
             <h1>Our Certificates & Online Programs for 2022</h1>
     </section>
@@ -117,6 +118,17 @@
  </div>
  
 </section>
+<!-- Toggle Menu -->
+<script>
+
+    var navLinks= document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right="0";
+    }
+    function hideMenu(){
+        navLinks.style.right="-200px";
+    }
+</script>
 
 </body>
 </html>
